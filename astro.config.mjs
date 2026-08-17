@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://YOUR_GITHUB_USERNAME.github.io",
-  base: "/",
-  output: "static"
+  site: "https://github.com/shinyvalueable.github.io",
+  base: "/moming/",
 });
