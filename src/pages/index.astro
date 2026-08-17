@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  siteConfig,
+  researchAreas,
+  publications,
+  projects,
+  skills
+} from "../config";
+---
+
+<BaseLayout>
+  <section id="about" class="profile-section">
+    <div class="container">
+
+      <div class="profile-layout">
+
+        <!-- =========================
+            LEFT: PROFILE
+            ========================= -->
+        <aside class="profile-sidebar">
+
+          <!-- Photo -->
+          <div class="profile-photo">
+            <img
+              src={siteConfig.avatar}
+              alt={`${siteConfig.name} profile`}
+            />
+          </div>
+
+          <!-- Name -->
+          <h1 class="profile-name">
+            {siteConfig.name}
+          </h1>
+
+          <!-- Email -->
+          <a
+            class="profile-email"
+            href={`mailto:${siteConfig.email}`}
+          >
+            {siteConfig.email}
+          </a>
+
+          <!-- GitHub -->
+          <a
+            class="profile-github"
+            href={siteConfig.github}
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+
+          <!-- Academic Background -->
+          <div class="academic-background">
+            <div class="education-item">
+              <strong>
+                Huazhong University of Science and Technology
+              </strong>
+
+              <span>
+                Master
+              </span>
+              <span>
+                Software Engineering
+              </span>
+            </div>
+
+            <div class="education-item">
+              <strong>
+                Shandong University
+              </strong>
+
+              <span>
+                Bachelor
+              </span>
+              <span>
+                Software Engineering
+              </span>
+            </div>
+
+          </div>
+
+        </aside>
+
+
+        <!-- =========================
+            RIGHT: INTRODUCTION
+            ========================= -->
+        <div class="profile-content">
+
+          <p class="eyebrow">
+            RESEARCH INTERESTS
+          </p>
+
+          <h3 class="profile-title">
+            Generative Models · Multimodal Learning
+          </h3>
+
+          <div class="profile-introduction">
+
+            <p>
+              I am currently a master's student in Software Engineering
+              at Huazhong University of Science and Technology (HUST).
+              My research experience has focused on deep learning and
+              generative modeling, including VAE, GAN, Diffusion models,
+               and Transformer.
+            </p>
+
+            <p>
+              Going forward, my research interests lie at 
+              <strong>generative models</strong> and
+              <strong>multimodal learning</strong>, especially their
+              applications to <strong>medical AI</strong>. I am 
+              particularly interested in developing reliable and 
+              generalizable AI systems that can integrate heterogeneous 
+              medical information to support clinical decision-making.
+            </p>
+
+          </div>
+</div>
+
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>
